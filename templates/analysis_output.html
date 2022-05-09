@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://showmovies.s3-website.ap-south-1.amazonaws.com/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sentimental analysis</title>
+
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+      body {
+<!--      blue-->
+        border:3px solid black;
+        background: #232f3e;
+        font-family: "PT Sans", sans-serif;
+      }
+
+
+      /*Resize the wrap to see the search bar change!*/
+
+      .container {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 70%;
+        height: 70%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px 60px 30px 40px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .container .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .container .content .right-side {
+        width: 75%;
+      }
+      .content .right-side .topic-text {
+        font-size: 30px;
+        font-weight: 600;
+        color: #3e2093;
+      }
+      .topic-text{
+      color: red;
+      }
+      .input-box {
+        width: 100%;
+        margin: 12px 0;
+        text-align:center;
+      }
+      .title{
+      color:#ec7211;
+      font-weight:bold;
+      }
+
+      .right-side label{
+        font-size: 20px;
+      }
+
+
+    </style>
+  <script src="./showmovies.s3-website.ap-south-1.amazonaws.com_files/js"></script></head>
+  <body>
+    <div class="container"
+         style="
+<!--         border:3px solid red;-->
+    height: max-content;
+    display:flex;
+    align-items:center;
+     justify-content:center;
+">
+      <div class="content" style="
+<!--      border:3px solid yellow;-->
+      display:flex;
+    align-items:center;
+    justify-content:center;
+">
+        <div class="right-side" style="
+        border:3px solid white;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    align-items:center;
+" >
+          <div class="topic-text"
+               style="color:#3e2093;
+               font-size:40px;
+<!--               border:3px solid black;-->
+               width:100%;
+<!--               padding:12px;-->
+
+                ">
+            <strong>AWS Comprehend - Sentiment Analysis</strong> </div>
+            <div class="input-box">
+              <label class="title">statusCode: </label>
+              <label class="data">{{data['statusCode']}}</label>
+            </div>
+            <div class="input-box">
+              <label class="title">Sentiment: </label>
+              <label class="data data_added">{{data['Response']['Sentiment']}}</label>
+            </div>
+            <div class="input-box">
+              <label class="title" style="
+              font-size:30px;
+              color:#3e2093;
+                "><strong>Sentiment Scores</strong>  </label>
+<!--                <br>-->
+<!--              <label class="data_review"  data-bind="text: lastName">{{data['Response']['SentimentScore']}}</label>-->
+            </div>
+            <div class="input-box">
+              <label class="title">Positive: </label>
+              <label class="data">{{data['Response']['SentimentScore']['Positive']}}</label>
+            </div>
+            <div class="input-box">
+              <label class="title">Negative: </label>
+              <label class="data">{{data['Response']['SentimentScore']['Negative']}}</label>
+            </div>
+          <div class="input-box">
+              <label class="title">Neutral: </label>
+              <label class="data">{{data['Response']['SentimentScore']['Neutral']}}</label>
+            </div>
+
+          <div class="input-box">
+              <label class="title">Mixed: </label>
+              <label class="data">{{data['Response']['SentimentScore']['Mixed']}}</label>
+          </div>
+
+        </div>
+      </div>
+      <button style=" margin-top: 400px; border-radius: 12px;
+
+     background-color: #232f3e;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+<!--  margin: 4px 2px;-->
+  cursor: pointer;
+"><a href="{{ url_for('index')}}" style="  text-decoration: none; color: white;">Check again</a></button>
+
+    </div>
+
+
+<div id="naptha_container0932014_0707"></div></body></html>
